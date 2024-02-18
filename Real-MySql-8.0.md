@@ -5,11 +5,11 @@
 ### 9.1.1 쿼리 실행 절차
 
 ```mermaid
-graph LR
-A(SQL) --> B;
-B(SQL 파서) --> C;
-C(옵티마이저) --> D;
-D(스토리지 엔진);
+flowchart LR
+    A[SQL] --> B;
+    B[SQL 파서] --> C;
+    C[옵티파이저] --> D;
+    D[스토리지 엔진]
 ```
 
 - SQL 파서: SQL 파싱하여 SQL 트리를 구성. SQL 문장 아닌 SQL 트리를 기준으로 실행 된다.
